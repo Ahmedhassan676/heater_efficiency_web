@@ -11,7 +11,7 @@ def main():
 
     p1 = st.number_input("Enter Oxygen percent %")
     p2 = st.number_input("Enter Stack Temperature in Celsius")
-    x= p1
+    x= (p1*91.2)/(20.95-2)
     y = (p2*1.8)+32
     efficiency = round((100-((0.0237+(0.000189*x))*(y-80)))*(100/(100+2)),2)
 
